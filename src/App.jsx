@@ -8,6 +8,7 @@ import DocumentsVerifications from "./Pages/Login and KYC/DocumentsVerifications
 import UploadDocuments from "./Pages/Login and KYC/UploadDocuments";
 import ReviewDetails from "./Pages/Login and KYC/ReviewDetails"
 import SuccessReview from "./Pages/Login and KYC/SuccessReview"
+import HomePage from "./Pages/Home Page/HomePage";
 function App() {
   return (
     <BrowserRouter> 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/documents-verifications/upload" element={<UploadDocuments />} />
         <Route path="/review-details" element={<ReviewDetails />} />
         <Route path="/review-details/success" element={<SuccessReview />} />
+        <Route path="/homepage" element={<HomePage />} />
 
         
       </Routes>
