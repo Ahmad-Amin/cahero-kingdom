@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  @apply bg-[#0d0d0d];
+
+}
+
+code {
+  font-family: 'Poppins', sans-serif;
+
+}
