@@ -30,8 +30,8 @@ const SignInLayout = ({ children }) => {
           </div>
           <div className="absolute bottom-0 left-0 p-12 w-2/3">
             {/* Text Section */}
-            <h1 className="text-5xl font-thin mb-4">
-              Unlock growth and alignment with
+            <h1 className="text-4xl font-thin mb-4">
+              Unlock growth and alignment with <br/>
               <span className="text-[#4675ff] font-bold"> Cahero Kingdom</span>
             </h1>
             <p className="text-white opacity-60">
@@ -42,7 +42,7 @@ const SignInLayout = ({ children }) => {
         </div>
 
         {/* Right Section */}
-        <div className="w-1/2 max-h-full h-screen bg-[#141414] text-black flex justify-center items-center overflow-y-auto">
+        <div className="w-1/2 max-h-full h-screen bg-[#141414] text-black  overflow-y-auto">
           {children}
         </div>
       </div>

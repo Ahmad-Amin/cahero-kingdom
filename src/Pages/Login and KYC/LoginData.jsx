@@ -86,9 +86,9 @@ const LoginData = () => {
             />
           </div>
 
-          <div className="flex justify-start w-auto h-auto ">
+          <div className="flex justify-center w-auto h-auto ">
             <button
-              className="bg-[#4675ff] text-white text-base font-bold hover:bg-[#385dcc] w-1/5 h-12 rounded-full items-center ease-in-out transition duration-300"
+              className="bg-[#4675ff] text-white text-base font-bold hover:bg-[#385dcc] w-1/2 h-12 rounded-full items-center ease-in-out transition duration-300"
               onClick={handleContinue}
             >
               Continue

@@ -15,7 +15,7 @@ const UploadDocuments = () => {
   };
   return (
     <SignInLayout>
-      <div className="h-full mt-20 w-full px-10">
+      <div className="h-full p-8 w-full">
         <button
           className="hover:font-extrabold text-white text-lg ease-in-out transition-all duration-300 cursor-pointer my-5"
           onClick={handleBack}
@@ -31,7 +31,7 @@ const UploadDocuments = () => {
           <h1 className="font-normal text-base text-white mb-2">
             Upload Front Side of ID Card
           </h1>
-          <div className="w-5/6 h-full bg-[#1d1c1c] flex items-center justify-center rounded-xl">
+          <div className="w-full h-full bg-[#1d1c1c] flex items-center justify-center rounded-xl">
             <label
               htmlFor="file-upload"
               className="bg-[#4675ff] text-white py-3 px-6 rounded-lg flex items-center space-x-2 cursor-pointer hover:bg-[#385dcc] transition duration-300"
@@ -45,7 +45,7 @@ const UploadDocuments = () => {
           <h1 className="font-normal text-base text-white mb-2">
             Upload Back Side of ID Card
           </h1>
-          <div className="w-5/6 h-full bg-[#1d1c1c] flex items-center justify-center rounded-xl">
+          <div className="w-full h-full bg-[#1d1c1c] flex items-center justify-center rounded-xl">
             <label
               htmlFor="file-upload"
               className="bg-[#4675ff] text-white py-3 px-6 rounded-lg flex items-center space-x-2 cursor-pointer hover:bg-[#385dcc] transition duration-300"
@@ -55,9 +55,9 @@ const UploadDocuments = () => {
             <input id="file-upload" type="file" className="hidden" />
           </div>
         </div>
-        <div className="flex justify-start w-auto h-auto pb-10 mt-16">
+        <div className="flex justify-center w-auto h-auto pb-10 mt-16">
           <button
-            className="bg-[#4675ff] text-white text-base font-bold  hover:bg-[#385dcc] w-1/4 h-12 rounded-full items-center ease-in-out transition duration-300"
+            className="bg-[#4675ff] text-white text-base font-bold  hover:bg-[#385dcc] w-1/2 h-12 rounded-full items-center ease-in-out transition duration-300"
             onClick={handleContinue}
           >
             Continue

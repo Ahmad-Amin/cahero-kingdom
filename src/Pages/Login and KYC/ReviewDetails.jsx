@@ -14,7 +14,7 @@ const ReviewDetails = () => {
   };
   return (
     <SignInLayout>
-      <div className="h-full mt-20 w-full px-10">
+      <div className="h-full p-8 w-full ">
         <button
           className="hover:font-extrabold text-white text-lg ease-in-out transition-all duration-300 cursor-pointer my-5"
           onClick={handleBack}

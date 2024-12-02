@@ -90,7 +90,7 @@ function Navbar() {
           {/* Logo */}
           <Link to="/">
             <img
-              src={`/Images/Cahero Kingdom.png`}
+              src={`/Images/Cahero.png`}
               alt="Logo"
               className="h-16"
             />
@@ -101,9 +101,11 @@ function Navbar() {
             <li>
               <NavLink
                 to="/"
-                className={({ isActive }) =>
+                className={() =>
                   `font-medium ${
-                    isActive ? "text-white" : "text-gray-400"
+                    location.pathname.includes("/homepage")
+                      ? "text-white"
+                      : "text-gray-400"
                   } hover:text-white`
                 }
               >
@@ -115,7 +117,7 @@ function Navbar() {
                 to="/community"
                 className={() =>
                   `font-medium ${
-                    location.pathname.includes("/documentaries")
+                    location.pathname.includes("/community")
                       ? "text-white"
                       : "text-gray-400"
                   } hover:text-white`
@@ -193,29 +195,29 @@ function Navbar() {
                   </div>
                 </div>
                 <ul className="py-2">
-                  <li>
+                  <li className="mx-2">
                     <Link
                       to="/"
-                      className="block px-4 py-2 hover:bg-[#5242b6] rounded-lg"
+                      className="block px-4 py-2 hover:bg-[#385dcc] rounded-lg ease-in-out transition duration-300"
                     >
                       <DashboardOutlinedIcon className="mr-2" />
                       Dashboard
                     </Link>
                   </li>
-                  <li>
+                  <li className="mx-2">
                     <Link
                       to="/profile-settings"
-                      className="block px-4 py-2 hover:bg-[#5242b6] rounded-lg"
+                      className="block px-4 py-2 hover:bg-[#385dcc] rounded-lg ease-in-out transition duration-300"
                     >
                       <SettingsOutlinedIcon className="mr-2" />
                       Settings
                     </Link>
-                  </li>
+                  </li >
                   {currentUser.role === "admin" && (
-                    <li>
+                    <li className="mx-2">
                       <Link
-                        to="/admin-panel"
-                        className="block px-4 py-2 hover:bg-[#5242b6] rounded-lg"
+                        // to="/admin-panel"
+                        className="block px-4 py-2 hover:bg-[#385dcc] rounded-lg ease-in-out transition duration-300"
                       >
                         <AdminPanelSettingsOutlinedIcon className="mr-2" />
                         Admin Panel
@@ -223,10 +225,10 @@ function Navbar() {
                     </li>
                   )}
                 </ul>
-                <div className="py-2">
+                <div className="py-2 mx-2">
                   <Link
                     to="/"
-                    className="block px-4 py-2 text-red-600 hover:bg-red-700 rounded-lg"
+                    className="block px-4 py-2 text-red-600 hover:text-white hover:bg-red-700 rounded-lg ease-in-out transition duration-300"
                   >
                     <LogoutOutlinedIcon className="mr-2" />
                     Sign out

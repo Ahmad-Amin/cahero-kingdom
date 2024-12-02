@@ -15,7 +15,7 @@ const LogIn = () => {
 
   return (
     <SignInLayout>
-      <div className="w-full">
+      <div className="w-full pt-32">
         {/* Heading */}
         <h1 className="font-normal text-4xl text-white flex items-center justify-center">
           Login to Your Account
