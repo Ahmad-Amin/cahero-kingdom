@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; // Import useState
 import SidebarLayout from "../../../Layout/SidebarLayout";
-
+import YourPersonalInfo from './YourPersonalInfo';
+import UploadDocument from './UploadDocument'
 const Verifications = () => {
   const [activeTab, setActiveTab] = useState("personalInfo");
 
@@ -20,7 +21,7 @@ const Verifications = () => {
               activeTab === "personalInfo" ? "text-white border-b-2 border-blue-500" : "text-white opacity-50"
             }`}
           >
-            Your Personal Info
+            Your Personal info
           </div>
           <div
             onClick={() => handleTabChange("uploadedDocuments")}
@@ -34,8 +35,8 @@ const Verifications = () => {
 
         {/* Content Based on Active Tab */}
         <div className="mt-6">
-          {activeTab === "personalInfo" && <div>Your Personal Info Content</div>}
-          {activeTab === "uploadedDocuments" && <div>Uploaded Documents Content</div>}
+          {activeTab === "personalInfo" && <div><YourPersonalInfo/></div>}
+          {activeTab === "uploadedDocuments" && <div><UploadDocument/></div>}
         </div>
       </div>
     </SidebarLayout>

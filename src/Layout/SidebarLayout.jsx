@@ -29,7 +29,7 @@ const SidebarLayout = ({ children }) => {
       <div className="w-auto bg-[#0e0e0e] text-white flex flex-col py-6 px-3 rounded-xl overflow-hidden">
         {/* Profile Section */}
         <div className="flex flex-row items-center gap-4 mb-8 m-5">
-          <div className="w-10 h-10 bg-purple-500 flex items-center justify-center rounded-full text-lg font-semibold overflow-hidden">
+          <div className="w-10 h-10 bg-[#4675ff] flex items-center justify-center rounded-full text-lg font-semibold overflow-hidden">
             {profileImage ? (
               <img
                 src={profileImage}
@@ -53,9 +53,9 @@ const SidebarLayout = ({ children }) => {
           {menuItems.map((item) => (
             <li
               key={item.id}
-              className={`flex items-center gap-4 cursor-pointer hover:text-purple-500 ${
+              className={`flex items-center gap-4 cursor-pointer hover:text-[#4675ff] ease-in-out transition duration-300 ${
                 location.pathname.includes(item.link)
-                  ? "border-l-4 border-purple-500 bg-transparent font-bold"
+                  ? "border-l-4 border-[#4675ff] bg-transparent font-bold"
                   : ""
               }`}
               

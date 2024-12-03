@@ -3,7 +3,6 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 
 function Navbar() {
@@ -88,7 +87,7 @@ function Navbar() {
         {/* Left Section */}
         <div className="flex items-center space-x-8">
           {/* Logo */}
-          <Link to="/">
+          <Link to="/homepage">
             <img
               src={`/Images/Cahero.png`}
               alt="Logo"
@@ -100,7 +99,7 @@ function Navbar() {
           <ul className="flex space-x-6">
             <li>
               <NavLink
-                to="/"
+                to="/homepage"
                 className={() =>
                   `font-medium ${
                     location.pathname.includes("/homepage")
@@ -195,16 +194,16 @@ function Navbar() {
                   </div>
                 </div>
                 <ul className="py-2">
-                  <li className="mx-2">
+                  <li className="m-2">
                     <Link
-                      to="/"
+                      to="/homepage"
                       className="block px-4 py-2 hover:bg-[#385dcc] rounded-lg ease-in-out transition duration-300"
                     >
                       <DashboardOutlinedIcon className="mr-2" />
                       Dashboard
                     </Link>
                   </li>
-                  <li className="mx-2">
+                  <li className="m-2">
                     <Link
                       to="/profile-settings"
                       className="block px-4 py-2 hover:bg-[#385dcc] rounded-lg ease-in-out transition duration-300"
@@ -213,7 +212,7 @@ function Navbar() {
                       Settings
                     </Link>
                   </li >
-                  {currentUser.role === "admin" && (
+                  {/* {currentUser.role === "admin" && (
                     <li className="mx-2">
                       <Link
                         // to="/admin-panel"
@@ -223,7 +222,7 @@ function Navbar() {
                         Admin Panel
                       </Link>
                     </li>
-                  )}
+                  )} */}
                 </ul>
                 <div className="py-2 mx-2">
                   <Link
