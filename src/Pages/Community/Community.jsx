@@ -42,7 +42,7 @@ const communityPosts = [
           firstName: "Alice",
           lastName: "Smith",
           email: "alice@example.com",
-          profileImageUrl: "https://via.placeholder.com/50",
+          profileImageUrl: "https://via.placeholder.com",
         },
       },
     ],
@@ -149,9 +149,9 @@ const Community = () => {
   return (
     <div className="mt-24">
       <Navbar />
-      <div className="mx-12 my-5 flex flex-row justify-between w-full">
-        <h1 className="text-white font-semibold text-2xl">Community</h1>
-        <div className="mr-14">
+      <div className=" my-5 flex flex-row justify-between w-full">
+        <h1 className="text-white font-semibold text-2xl ml-12">Community</h1>
+        <div className="">
           <button
             className="bg-[#1b1a1a] hover:bg-[#413e3e] transition duration-300 w-auto pr-1 pl-3 h-9 text-white font-semibold mr-5 rounded-lg"
             onClick={toggleMembersDropdown}
@@ -184,7 +184,7 @@ const Community = () => {
               <div className="flex flex-row items-center bg-transparent w-full h-16 mt-2 border-b-2 border-[#232323]">
                 <div className="w-10 h-10 rounded-full overflow-hidden mx-5">
                   <img
-                    src="https://via.placeholder.com/150"
+                    src="/Images/UserImage.jpg"
                     alt="User"
                     className="w-full h-full object-cover"
                   />
@@ -215,7 +215,7 @@ const Community = () => {
                 {post.type === "image" && post.assetUrl && (
                   <div className="w-full h-[500px] overflow-hidden px-8 my-8">
                     <img
-                      src={post.assetUrl}
+                      src={post.assetUrl || `/Images/UserImage.jpg`}
                       alt=""
                       className="w-full h-full rounded-lg object-contain"
                     />
@@ -264,7 +264,7 @@ const Community = () => {
                       <div className="flex items-center m-5">
                         <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
                           <img
-                            src="https://via.placeholder.com/150"
+                            src="/Images/UserImage.jpg"
                             alt=""
                             className="w-full h-full object-cover"
                           />
@@ -298,7 +298,7 @@ const Community = () => {
                         <div className="flex flex-row gap-3 items-center">
                           <div className="w-10 h-10 rounded-full overflow-hidden">
                             <img
-                              src={comment.user.profileImageUrl}
+                              src="/Images/UserImage.jpg"
                               alt="Profile"
                               className="w-full h-full object-center"
                             />
@@ -337,7 +337,7 @@ const Community = () => {
                             <div className="flex gap-3 items-center">
                               <div className="w-10 h-10 rounded-full overflow-hidden">
                                 <img
-                                  src="https://via.placeholder.com/150"
+                                  src="/Images/UserImage.jpg"
                                   alt="User"
                                   className="w-full h-full object-cover"
                                 />
@@ -353,8 +353,6 @@ const Community = () => {
                                 className="bg-black h-9 text-white rounded-full w-full border border-[#b1b1b1] resize-none outline-none pt-1 pl-3"
                                 placeholder="Write your reply.."
                               />
-                            </div>
-                            <div className="flex flex-row m-5 space-x-3">
                               <div
                                 onClick={() =>
                                   addReplyToComment(post.id, comment.id)

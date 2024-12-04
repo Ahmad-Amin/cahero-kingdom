@@ -9,7 +9,7 @@ const PlatformCards = () => {
   const platforms = [
     {
       id: 1,
-      image: "/Images/Cahero Unity.png",
+      image: "/Images/Cahero Source.png",
       title: "Cahero Source",
       description:
         "We offer exclusive private investment opportunities to support high-potential projects and drive growth.",
@@ -84,7 +84,7 @@ const PlatformCards = () => {
                 <img
                   src={platform.image}
                   alt={platform.title}
-                  className="w-auto h-full object-cover"
+                  className="w-auto h-32 object-cover"
                 />
               </div>
               <div className="flex-1 ml-4">

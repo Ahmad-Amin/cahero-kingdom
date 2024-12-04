@@ -3,8 +3,8 @@ import React from "react";
 const SignInLayout = ({ children }) => {
   return (
     <div>
-      <div className="text-white text-4xl bg-transparent font-bold absolute flex items-center m-8">
-        CAHERO
+      <div className="absolute flex items-center m-8">
+        <img src="/Images/Cahero.png" alt="" className="h-16 w-auto" />
       </div>
       <div className="flex flex-row h-screen max-h-full">
       {/* Left Section */}

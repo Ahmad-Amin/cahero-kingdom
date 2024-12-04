@@ -24,7 +24,7 @@ const SidebarLayout = ({ children }) => {
   ];
 
   return (
-    <div className="flex h-screen mt-28 ml-8">
+    <div className="flex h-screen pt-24 pb-2 ml-8">
       {/* Sidebar */}
       <div className="w-auto bg-[#0e0e0e] text-white flex flex-col py-6 px-3 rounded-xl overflow-hidden">
         {/* Profile Section */}
