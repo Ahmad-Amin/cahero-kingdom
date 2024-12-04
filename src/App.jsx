@@ -17,6 +17,7 @@ import EditPassword from "./Pages/Profile Settings/EditPassword"
 import EditEmail from "./Pages/Profile Settings/EditEmail"
 import Notifications from "./Pages/Profile Settings/Notifications"
 import Verifications from "./Pages/Profile Settings/Verification/Verifications"
+import Community from "./Pages/Community/Community"
 function App() {
   return (
     <Provider store={store}>
@@ -45,6 +46,7 @@ function App() {
           <Route path="/profile-settings/edit-email" element={<EditEmail />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/verification" element={<Verifications />} />
+          <Route path="/community" element={<Community />} />
 
           
         </Routes>

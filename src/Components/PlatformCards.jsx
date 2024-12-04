@@ -9,7 +9,7 @@ const PlatformCards = () => {
   const platforms = [
     {
       id: 1,
-      image: "/Images/Fund Accounting.png",
+      image: "/Images/Cahero Unity.png",
       title: "Cahero Source",
       description:
         "We offer exclusive private investment opportunities to support high-potential projects and drive growth.",
@@ -17,7 +17,7 @@ const PlatformCards = () => {
     },
     {
       id: 2,
-      image: "/Images/Crystal Ball.png",
+      image: "/Images/Cahero Evolution.png",
       title: "Cahero Evolution",
       description:
         "We provide tools and guidance for individuals seeking personal and spiritual growth.",
@@ -25,7 +25,7 @@ const PlatformCards = () => {
     },
     {
       id: 3,
-      image: "/Images/Users.png",
+      image: "/Images/Cahero Catalyst.png",
       title: "Cahero Catalyst",
       description:
         "We facilitate social impact investments that drive positive change and sustainable development.",
@@ -33,7 +33,7 @@ const PlatformCards = () => {
     },
     {
       id: 4,
-      image: "/Images/Accounting.png",
+      image: "/Images/Cahero Legacy.png",
       title: "Cahero Legacy",
       description:
         "We deliver strategies and solutions aimed at maximizing financial growth and prosperity.",
@@ -41,7 +41,7 @@ const PlatformCards = () => {
     },
     {
       id: 5,
-      image: "/Images/Businessman.png",
+      image: "/Images/Cahero Ascension.png",
       title: "Cahero Acsension",
       description:
         "We cultivate ambassador programs that build strong brand advocates and expand your reach.",
@@ -49,7 +49,7 @@ const PlatformCards = () => {
     },
     {
       id: 6,
-      image: "/Images/Networking Manager.png",
+      image: "/Images/Cahero Unity.png",
       title: "Cahero Unity",
       description:
         "We host mastermind networking events that connect visionary leaders for collaboration and growth.",
